@@ -5,7 +5,7 @@ from main import main
 
 def test_free1(capsys, monkeypatch):
     amount = random.randrange(100000, 324999)
-    inputs = iter([amount, 2])
+    inputs = iter([str(amount), '2'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
@@ -13,7 +13,7 @@ def test_free1(capsys, monkeypatch):
 
 def test_free2(capsys, monkeypatch):
     amount = random.randrange(325000, 999999)
-    inputs = iter([amount, 7])
+    inputs = iter([str(amount), '7'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
@@ -22,7 +22,7 @@ def test_free2(capsys, monkeypatch):
 def test_40(capsys, monkeypatch):
     amount = random.randrange(325000, 999999)
     tax = (amount - 325000) * 0.4
-    inputs = iter([amount, 2])
+    inputs = iter([str(amount), '2'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
@@ -41,7 +41,7 @@ def test_32(capsys, monkeypatch):
 def test_24(capsys, monkeypatch):
     amount = random.randrange(325000, 999999)
     tax = (amount - 325000) * 0.24
-    inputs = iter([amount, 4.1])
+    inputs = iter([str(amount), '4.1'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
@@ -51,7 +51,7 @@ def test_24(capsys, monkeypatch):
 def test_16(capsys, monkeypatch):
     amount = random.randrange(325000, 999999)
     tax = (amount - 325000) * 0.16
-    inputs = iter([amount, 5.75])
+    inputs = iter([str(amount), '5.75'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
@@ -61,7 +61,7 @@ def test_16(capsys, monkeypatch):
 def test_8(capsys, monkeypatch):
     amount = random.randrange(325000, 999999)
     tax = (amount - 325000) * 0.08
-    inputs = iter([amount, 6.25])
+    inputs = iter([str(amount), '6.25'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
