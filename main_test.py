@@ -26,7 +26,7 @@ def test_40(capsys, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
-    assert captured.out == f'Tax: {tax}\n'
+    assert captured.out == f'Tax: {int(tax)}\n'
 
 def test_32(capsys, monkeypatch):
     amount = random.randrange(325000, 999999)
@@ -35,7 +35,7 @@ def test_32(capsys, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
-    assert captured.out == f'Tax: {tax}\n'
+    assert captured.out == f'Tax: {int(tax)}\n'
 
 
 def test_24(capsys, monkeypatch):
@@ -45,7 +45,7 @@ def test_24(capsys, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
-    assert captured.out == f'Tax: {tax}\n'
+    assert captured.out == f'Tax: {int(tax)}\n'
 
 
 def test_16(capsys, monkeypatch):
@@ -55,7 +55,7 @@ def test_16(capsys, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
-    assert captured.out == f'Tax: {tax}\n'
+    assert captured.out == f'Tax: {int(tax)}\n'
 
 
 def test_8(capsys, monkeypatch):
@@ -65,4 +65,4 @@ def test_8(capsys, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main()
     captured = capsys.readouterr()
-    assert captured.out == f'Tax: {tax}\n'
+    assert captured.out == f'Tax: {int(tax)}\n'
