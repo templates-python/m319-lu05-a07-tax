@@ -1,43 +1,43 @@
 [
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_free1",
+    "function": "test_free1",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_free2",
+    "function": "test_free2",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_40",
+    "function": "test_40",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_32",
+    "function": "test_32",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_24",
+    "function": "test_24",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_16",
+    "function": "test_16",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "impossible",
-    "function": "impossible",
+    "name": "test_8",
+    "function": "test_8",
     "timeout": 10,
     "points": 1
   }
